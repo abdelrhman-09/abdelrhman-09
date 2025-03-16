@@ -1,0 +1,154 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* App Bar */
+.app-bar {
+    background: #2d3436;
+    color: white;
+    padding: 1rem 3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #74b9ff;
+}
+
+/* Page Sections */
+section {
+    padding: 6rem 3rem;
+    min-height: 100vh;
+}
+
+/* Home Section */
+#home {
+    background: url('https://api.ischooltech.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlhpQ2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9fe2f0c0822495f3a0017e78416d091fc890ffb3/background.png?disposition=inline') center/cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 1rem;
+    transition:  0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.4);
+}
+
+/* Skills Section */
+#skills {
+    background: #f8f9fa;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.7s ease;
+}
+.skill-card:hover {
+    transform: scale(1.1);
+}
+.skill-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.html { color: #e34c26; }
+.css { color: #264de4; }
+.js { color: #f0db4f; }
+.flutter { color: #02569b; }
+.dart { color: #00b4ab; }
+
+/* Info Section */
+#info {
+    background: #fff;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.contact-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-card h3 {
+    margin-bottom: 1.5rem;
+    color: #2d3436;
+}
+
+/* Projects Section */
+#projects {
+    background: #f8f9fa;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.5s ease-in-out;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.project-card h3 {
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
