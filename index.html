@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrhman - Frontend Developer</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- App Bar -->
+    <nav class="app-bar">
+        <h1>Abdelrhman</h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#info">Info</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home">
+        <div class="intro">
+            <h1>Abdelrhman Ahmed</h1>
+            <p>16 Years Old | Frontend Developer</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Page -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fab fa-html5 html"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt css"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Projects Page -->
+    <section id="projects">
+        <h2>recent Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>E-Commerce Website</h3>
+                <p>Built with HTML, CSS, and JavaScript</p>
+                <p>Features: Shopping cart, product filtering</p>
+            </div>
+            <div class="project-card">
+                <h3>Task Manager App</h3>
+                <p>Developed using Flutter and Dart</p>
+                <p>Features: Cloud sync, reminders</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive design with CSS Grid</p>
+                <p>Features: Dark mode, animations</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>API integration with JavaScript</p>
+                <p>Features: Location detection, 5-day forecast</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Info Page -->
+    <section id="info">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Social Media</h3>
+                <p><i class="fab fa-whatsapp"></i> +20 123 456 7890</p>
+                <p><i class="fab fa-github"></i> github.com/yourusername</p>
+                <p><i class="fab fa-facebook"></i> facebook.com/yourprofile</p>
+            </div>
+            <div class="contact-card">
+                <h3>Direct Contact</h3>
+                <p><i class="fas fa-envelope"></i> abdelrhman@email.com</p>
+                <p><i class="fas fa-phone"></i> +20 123 456 7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
