@@ -18,13 +18,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* For responsiveness */
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 2rem;
-    font-size: 1.1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
     transition: color 0.3s;
 }
 
@@ -49,19 +55,22 @@ section {
 }
 
 .intro h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .social-icons {
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-icons a {
     color: white;
     font-size: 2rem;
-    margin: 0 1rem;
-    transition:  0.3s ease;
+    margin: 0 0.5rem;
+    transition: 0.3s ease;
 }
 
 .social-icons a:hover {
@@ -75,14 +84,14 @@ section {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
     margin-top: 3rem;
 }
 
 .skill-card {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -92,15 +101,9 @@ section {
     transform: scale(1.1);
 }
 .skill-card i {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
-
-.html { color: #e34c26; }
-.css { color: #264de4; }
-.js { color: #f0db4f; }
-.flutter { color: #02569b; }
-.dart { color: #00b4ab; }
 
 /* Info Section */
 #info {
@@ -109,20 +112,15 @@ section {
 
 .contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
     margin-top: 3rem;
 }
 
 .contact-card {
     background: #f8f9fa;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
-}
-
-.contact-card h3 {
-    margin-bottom: 1.5rem;
-    color: #2d3436;
 }
 
 /* Projects Section */
@@ -132,8 +130,8 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
     margin-top: 3rem;
 }
 
@@ -152,3 +150,16 @@ section {
     margin-bottom: 1rem;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .app-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
